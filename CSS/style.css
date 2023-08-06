@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    font-size: 1.125rem;
+}
+
+img {
+    width: 100%;
+    border-radius: 0.8rem;
+}
+
+.images {
+    box-shadow: 4px 4px 10px  rgba(0, 0, 0, 0.197);
+}
+
+.container {
+    width: 92%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero {
+    width: 70%;
+    margin: 0 auto;
+    padding:20px 0 30px;
+}
+
+.profile-photo {
+    width: 45%;
+}
+
+.name {
+    text-transform: capitalize;
+    color: #4E5150;
+    font-size: 0.875rem;
+}
+
+.address {
+    text-transform: capitalize;
+    color: #A9A9A9;
+    font-size: 0.625rem;
+    padding-bottom: 1.2em;
+}
+
+.hero__info {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.2rem;
+}
+
+.data {
+    font-size: 0.625rem;
+    padding: 1em 1.3em;
+    background-color: #E5E5E5;
+    border-radius: 0.6rem;
+    width: 100%;
+    min-width: 78px;
+}
+
+.subtitle {
+    color: #BDBDBD;
+}
+
+.gallery-grid {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-areas: 'one two two'
+    'three three four'
+    'five six four';
+}
+
+.img-1 {
+    grid-area: one;
+}
+.img-2 {
+    grid-area: two;
+}
+.img-3 {
+    grid-area: three;
+}
+.img-4 {
+    grid-area: four;
+}
+.img-5 {
+    grid-area: five;
+}
+.img-6 {
+    grid-area: six;
+}
+
+footer {
+    font-size: 0.9rem;
+    color: #B9BDCF;
+    padding-top: 40px;
+}
+
+.username {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+@media(min-width: 900px){
+    .container {
+        width: 70%;
+        max-width: 1100px;
+    }
+
+    .gallery-grid {
+        gap: 1.5rem;
+    }
+
+    .hero {
+        width: 40%;
+        padding: 40px 0 60px;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .address {
+        font-size: 0.875rem;
+    }
+
+    .hero__info{
+        gap: 1.5rem;
+    }
+
+    .data {
+        max-width: 100px;
+    }
+
+    .title {
+        font-size: 1.125rem;
+    }
+
+    .subtitle {
+        font-size: 0.875rem;
+    }
+}
+
